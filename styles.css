@@ -1,0 +1,13 @@
+.answer-text {
+	border: solid 1px black;
+	width: 30%;
+	background-color: green;
+	padding:20px;
+	color:white;
+	border-radius: 8px;
+}
+.answer-text:hover {
+	cursor: pointer;
+	background-color: blue;
+}
+
