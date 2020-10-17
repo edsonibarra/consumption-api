@@ -1,10 +1,12 @@
 let correctAnswersArr = [];
 let ponitsPerCorrect = 20;
 let score = 0;
-let q = document.getElementById('n-questions').value;
+const qq = document.getElementById('n-questions').value; 
+
+
 function getFilters () {
     const containerHTML = document.getElementById('container')
-    // const q = document.getElementById('n-questions').value; 
+    const q = document.getElementById('n-questions').value; 
     const c = document.getElementById('category-selected').value;
     const d = document.getElementById('difficulty-selected').value;
     const t = document.getElementById('type-selected').value;
@@ -85,6 +87,6 @@ checkAns = (arr) => {
 function giveScore(num) {
     let containerHTML = document.getElementById('container')
     // containerHTML = "";
-    let total = q*20
-    container.innerHTML = `<h2>Your score has been ${num} out of ${total}</h2>`
+    let total = qq*20
+    container.innerHTML = `<h2>Your score has been ${num}</h2>`
 }
