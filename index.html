@@ -7,7 +7,8 @@
 	<title>Consumiendo una Api</title>
 </head>
 <body>
-	<div class="form-group">
+	<div class="outter-container m-5">
+		<div class="form-group">
 	        <label for="n-questions">Choose number of questions.</label>
 	        <select  class="form-control" id="n-questions">
 	          <option value="5">5</option>
@@ -68,15 +69,18 @@
          </div>
 	    <!-- <button onclick="getFilters()" id="btn">OK</button> -->
 	    <div class="btn-container">
-	    	<button class="btn-danger" onclick="getFilters()"> PLay </button>
+	    	<button class="btn btn-primary" onclick="getFilters()"> PLay </button>
 	    </div>
 
 
 
 
-	    <div id="container">
-	    	
-	    </div>
+	    <form onsubmit="event.preventDefault(), checkAns()" id="container">
+			
+			<input type="submit" value="Submit Answers">
+		</form>
+	</div>
+	
 
 	<script type="text/javascript" src="main.js"></script>
 </body>
